@@ -11,6 +11,16 @@ input, select {
   border-color: #6e8c62;
 }
 
-hr {
+hr, fieldset {
   border-color: #70ad55;
+}
+
+button {
+  background-color: #6e8c62;
+  color: #fff;
+}
+
+footer {
+  background-color: #70ad55;
+  color: #fff;
 }
