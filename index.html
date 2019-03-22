@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Volunteer sign up</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
@@ -13,217 +14,219 @@
 
   <header class="pad-t pad-b-1-2 gutter-1-2 push-2">
     <h1 class="push-1-2"> Apply to be a tree planter</h1>
-    <p class="mega"> Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    <div class="push">
+      <p class="mega push-0 max-length-no-center"> Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    </div>
   </header>
 
   <main class="gutter-1-2">
-  <h2 class="giga push-1-2">Personal details</h2>
-<form>
+    <h2 class="giga push-1-2">Personal details</h2>
+    <form>
 
-  <div class="push">
-    <label for="name" class="pad-t push-1-8"> Full name </label>
-    <input id="name" name="name" class="push-1-8" required>
-    <p class="micro italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-  </div>
+      <div class="push">
+        <label for="name" class="pad-t push-1-8"> Full name </label>
+        <input id="name" name="name" class="push-1-8" required>
+        <p class="micro italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+      </div>
 
-  <div class="push">
-    <label for="nickname" class="push-1-8"> What should we call you? </label>
-    <input id="nickname" name="nickname" class="push-1-8" required>
-    <p class="micro italic">What all your friends call you, e.g. “Liz”.</p>
-  </div>
+      <div class="push">
+        <label for="nickname" class="push-1-8"> What should we call you? </label>
+        <input id="nickname" name="nickname" class="push-1-8" required>
+        <p class="micro italic">What all your friends call you, e.g. “Liz”.</p>
+      </div>
 
-  <div class="push">
-    <label for="bday" class="push-1-8"> Date of birth </label>
-    <input id="bday" name="bday" type="date" class="push-1-8" required>
-  </div>
+      <div class="push">
+        <label for="bday" class="push-1-8"> Date of birth </label>
+        <input id="bday" name="bday" type="date" class="push-1-8" required>
+      </div>
 
-<div class="push">
-  <label for="size" class="push-1-8"> T-shirt size </label>
-  <select id="size" name="size" class="push-1-8">
-    <option>Select a t-shirt size</option>
-    <option>Fitted: XS</option>
-    <option>Fitted: S</option>
-    <option>Fitted: M</option>
-    <option>Fitted: L</option>
-    <option>Fitted: XL</option>
-    <option>Straight-cut: XS</option>
-    <option>Straight-cut:S</option>
-    <option>Straight-cut: M</option>
-    <option>Straight-cut: L</option>
-    <option>Straight-cut: XL</option>
-  </select>
-</div>
+      <div class="push">
+        <label for="size" class="push-1-8"> T-shirt size </label>
+        <select id="size" name="size" class="push-1-8">
+          <option value="">Select a t-shirt size</option>
+          <option>Fitted: XS</option>
+          <option>Fitted: S</option>
+          <option>Fitted: M</option>
+          <option>Fitted: L</option>
+          <option>Fitted: XL</option>
+          <option>Straight-cut: XS</option>
+          <option>Straight-cut:S</option>
+          <option>Straight-cut: M</option>
+          <option>Straight-cut: L</option>
+          <option>Straight-cut: XL</option>
+        </select>
+      </div>
 
-<div class="push">
-  <label for="email" class="push-1-8"> Email </label>
-  <input id="email" name="email" type="email" class="push-1-8" required>
-</div>
+      <div class="push">
+        <label for="email" class="push-1-8"> Email </label>
+        <input id="email" name="email" type="email" class="push-1-8" required>
+      </div>
 
-<div class="push">
-  <label for="number" class="push-1-8"> Phone number (optional)</label>
-  <input id="number" name="number" type="tel" class="push" required>
-</div>
+      <div class="pad-b-3-4 push">
+        <label for="number" class="push-1-8"> Phone number (optional)</label>
+        <input id="number" name="number" type="tel" required>
+      </div>
 
-<hr>
-<h2>Address</h2>
+      <hr>
+      <h2 class="giga push-1-2 pad-t pad-b">Address</h2>
 
-<div class="push">
-  <label for="address"> Street address </label>
-  <input id="address" name="address" required>
-</div>
+      <div class="pad-b-3-4 push-1-2">
+        <label for="address" class="push-1-8"> Street address </label>
+        <input id="address" name="address" class="push-1-8" required>
+      </div>
 
-<div class="push">
-  <label for="city"> City </label>
-  <input id="city" name="city" required>
-</div>
+      <div class="pad-b-3-4 push-1-2 pad-t-1-8">
+        <label for="city" class="push-1-8"> City </label>
+        <input id="city" name="city" class="push-1-8" required>
+      </div>
 
-<div class="push">
-  <label for="province"> Province </label>
-  <select id="province" name="province">
-    <option>Select a province</option>
-    <option>Alberta</option>
-    <option>British Columbia</option>
-    <option>Manitoba</option>
-    <option>New Brunswick</option>
-    <option>Newfoundland & Labrador</option>
-    <option>Northwest Territories</option>
-    <option>Nova Scotia</option>
-    <option>Nunavut</option>
-    <option>Ontario</option>
-    <option>Prince Edward Island</option>
-    <option>Québec</option>
-    <option>Saskatchewan</option>
-    <option>Yukon</option>
-  </select>
-</div>
+      <div class="pad-b-3-4 push-1-2 pad-t-1-8">
+        <label for="province" class="push-1-8"> Province </label>
+        <select id="province" name="province" class="push-1-8">
+          <option>Select a province</option>
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nova Scotia</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </select>
+      </div>
 
-<div class="push">
-  <label for="postal"> Postal code </label>
-  <input id="postal" name="postal" required>
-</div>
+      <div class="push-2 pad-t-1-8 pad-b-1-4">
+        <label for="postal" class="push-1-8"> Postal code </label>
+        <input id="postal" name="postal" required>
+      </div>
 
-<fieldset>
-<h2> What activities are you interested in helping with? </h2>
-<div class="push">
-  <input id="digging" name="digging" type="checkbox" required>
-  <label for="digging"> Digging holes</label>
-</div>
-<div class="push">
-  <input id="getting" name="getting" type="checkbox" required>
-  <label for="getting"> Getting dirty </label>
-</div>
-<div class="push">
-  <input id="lifting" name="lifting" type="checkbox" required>
-  <label for="lifting">Lifting heavy objects </label>
-</div>
-<div class="push">
-  <input id="driving" name="driving" type="checkbox" required>
-  <label for="driving">Driving people </label>
-</div>
-<div class="push">
-  <input id="transporting" name="transporting" type="checkbox" required>
-  <label for="transporting">Transporting trees </label>
-</div>
-<div class="push">
-  <input id="taking" name="taking" type="checkbox" required>
-  <label for="taking">Taking photos </label>
-</div>
-<div class="push">
-  <input id="publishing" name="publishing" type="checkbox" required>
-  <label for="publishing"> Online publishing</label>
-</div>
-<div class="push">
-  <input id="managing" name="managing" type="checkbox" required>
-  <label for="managing">Managing people </label>
-</div>
+      <fieldset>
+        <h2 class="pad-t"> What activities are you interested in helping with? </h2>
+        <div class="push">
+          <input id="digging" name="digging" type="checkbox" required>
+          <label for="digging"> Digging holes</label>
+        </div>
+        <div class="push">
+          <input id="getting" name="getting" type="checkbox" required>
+          <label for="getting"> Getting dirty </label>
+        </div>
+        <div class="push">
+          <input id="lifting" name="lifting" type="checkbox" required>
+          <label for="lifting">Lifting heavy objects </label>
+        </div>
+        <div class="push">
+          <input id="driving" name="driving" type="checkbox" required>
+          <label for="driving">Driving people </label>
+        </div>
+        <div class="push">
+          <input id="transporting" name="transporting" type="checkbox" required>
+          <label for="transporting">Transporting trees </label>
+        </div>
+        <div class="push">
+          <input id="taking" name="taking" type="checkbox" required>
+          <label for="taking">Taking photos </label>
+        </div>
+        <div class="push">
+          <input id="publishing" name="publishing" type="checkbox" required>
+          <label for="publishing"> Online publishing</label>
+        </div>
+        <div class="push">
+          <input id="managing" name="managing" type="checkbox" required>
+          <label for="managing">Managing people </label>
+        </div>
 
-<h2> Do you have any experiences with the following? </h2>
-<div class="push">
-  <input id="shovels" name="shovels" type="checkbox" required>
-  <label for="shovels">Shovels </label>
-</div>
-<div class="push">
-  <input id="gps" name="gps" type="checkbox" required>
-  <label for="gps">Hand-held GPS </label>
-</div>
-<div class="push">
-  <input id="writing" name="writing" type="checkbox" required>
-  <label for="writing"> Writing & blogging</label>
-</div>
-<div class="push">
-  <input id="photography" name="photography" type="checkbox" required>
-  <label for="photography">Photography </label>
-</div>
-<div class="push">
-  <input id="climbing" name="climbing" type="checkbox" required>
-  <label for="climbing">Trail & hill climbing </label>
-</div>
-<div class="push">
-  <input id="craft" name="craft" type="checkbox" required>
-  <label for="craft"> Bush craft</label>
-</div>
-<div class="push">
-  <input id="atvs" name="atvs" type="checkbox" required>
-  <label for="atvs">ATVs </label>
-</div>
-<div class="push">
-  <input id="plant-identification" name="plant-identification" type="checkbox" required>
-  <label for="plant-identification">Plant identification </label>
-</div>
-<div class="push">
-  <input id="planning" name="planning" type="checkbox" required>
-  <label for="planning">Special event planning </label>
-</div>
-<div class="push">
-  <input id="speaking" name="speaking" type="checkbox" required>
-  <label for="speaking">Speaking to groups </label>
-</div>
-</fieldset>
+        <h2> Do you have any experiences with the following? </h2>
+        <div class="push">
+          <input id="shovels" name="shovels" type="checkbox" required>
+          <label for="shovels">Shovels </label>
+        </div>
+        <div class="push">
+          <input id="gps" name="gps" type="checkbox" required>
+          <label for="gps">Hand-held GPS </label>
+        </div>
+        <div class="push">
+          <input id="writing" name="writing" type="checkbox" required>
+          <label for="writing"> Writing & blogging</label>
+        </div>
+        <div class="push">
+          <input id="photography" name="photography" type="checkbox" required>
+          <label for="photography">Photography </label>
+        </div>
+        <div class="push">
+          <input id="climbing" name="climbing" type="checkbox" required>
+          <label for="climbing">Trail & hill climbing </label>
+        </div>
+        <div class="push">
+          <input id="craft" name="craft" type="checkbox" required>
+          <label for="craft"> Bush craft</label>
+        </div>
+        <div class="push">
+          <input id="atvs" name="atvs" type="checkbox" required>
+          <label for="atvs">ATVs </label>
+        </div>
+        <div class="push">
+          <input id="plant-identification" name="plant-identification" type="checkbox" required>
+          <label for="plant-identification">Plant identification </label>
+        </div>
+        <div class="push">
+          <input id="planning" name="planning" type="checkbox" required>
+          <label for="planning">Special event planning </label>
+        </div>
+        <div class="push">
+          <input id="speaking" name="speaking" type="checkbox" required>
+          <label for="speaking">Speaking to groups </label>
+        </div>
+      </fieldset>
 
-<fieldset>
-  <h2>Do you have a valid driver’s license?</h2>
-  <div>
-    <input id="license" type="radio">
-    <label for="license"> Yes </label>
+      <fieldset>
+        <h2>Do you have a valid driver’s license?</h2>
+        <div>
+          <input id="license" type="radio">
+          <label for="license"> Yes </label>
 
-    <input id="no-license" type="radio">
-    <label for="no-license">No </label>
-  </div>
+          <input id="no-license" type="radio">
+          <label for="no-license">No </label>
+        </div>
 
-  <h2>Do you have a pick-up truck you’d be willing to use?</h2>
-  <div>
-    <input id="willing" type="radio">
-    <label for="willing"> Yes </label>
+        <h2>Do you have a pick-up truck you’d be willing to use?</h2>
+        <div>
+          <input id="willing" type="radio">
+          <label for="willing"> Yes </label>
 
-    <input id="not-willing" type="radio">
-    <label for="not-willing">No </label>
-  </div>
+          <input id="not-willing" type="radio">
+          <label for="not-willing">No </label>
+        </div>
 
-  <h2>Do you have up-to-date first-aid certification?</h2>
-  <div>
-    <input id="first-aid" type="radio">
-    <label for="first-aid"> Yes </label>
+        <h2>Do you have up-to-date first-aid certification?</h2>
+        <div>
+          <input id="first-aid" type="radio">
+          <label for="first-aid"> Yes </label>
 
-    <input id="no-first-aid" type="radio">
-    <label for="no-first-aid">No </label>
-  </div>
-</fieldset>
-<hr>
-<h2>Please let us know any comments or questions you may have. </h2>
-<div>
-  <textarea id="comments" name="comments" required> </textarea>
-</div>
-<hr>
+          <input id="no-first-aid" type="radio">
+          <label for="no-first-aid">No </label>
+        </div>
+      </fieldset>
+      <hr>
+      <h2>Please let us know any comments or questions you may have. </h2>
+      <div>
+        <textarea id="comments" name="comments" required> </textarea>
+      </div>
+      <hr>
 
-<div class="center-content">
-<button class="btn mega" type="submit"> Apply </button>
-</div>
+      <div class="center-content">
+        <button class="btn mega" type="submit"> Apply </button>
+      </div>
 
-</form>
-</main>
+    </form>
+  </main>
 
-<footer>
-  <p class="push-0">© Tree Hugger International Organization</p>
-</footer>
+  <footer>
+    <p class="push-0">© Tree Hugger International Organization</p>
+  </footer>
 </body>
 </html>
